@@ -1,13 +1,19 @@
+
+
+
 def printSpaces(number: int):
     for j in range(number):
         print("",end=' ')
+
+
 
 def printAsterisks(number: int):
     for k in range(number):
         print("\033[33m*\033[0m", end=" ")
 
 
-def dibujarPrimerTriagunlo(number: int, rowMax: int):
+
+def printPower(number: int, rowMax: int):
     for i in range(number):
 
         printSpaces(rowMax-i)
@@ -21,7 +27,7 @@ def dibujarPrimerTriagunlo(number: int, rowMax: int):
 
 
 
-def dibujarTriangulosDebajo(number: int,rowMax: int):
+def printWisdomAndCourage(number: int,rowMax: int):
     for i in range(number):
 
         printSpaces((number-i)-1)
@@ -33,35 +39,29 @@ def dibujarTriangulosDebajo(number: int,rowMax: int):
 
 
 
-
-
-
-def print_file(file_name: str):
+def printFile(fileName: str):
     try:
-        with open(file_name, 'r', encoding='utf-8') as file:
+        with open(fileName, 'r', encoding='utf-8') as file:
             content = file.read()
             print(content)
     except FileNotFoundError:
-        print(f"The file {file_name} does not exist.")
+        print(f"The file {fileName} does not exist.")
     except IOError:
-        print(f"Unable to open the file {file_name}.")
+        print(f"Unable to open the file {fileName}.")
 
 
 
-
-
-
-def printTriForce(number: int, rowMax: int):
-    dibujarPrimerTriagunlo(number, rowMax)
-    dibujarTriangulosDebajo(number, rowMax)
+def printTriforce(number: int, rowMax: int):
+    printPower(number, rowMax)
+    printWisdomAndCourage(number, rowMax)
     print(" ")
 
 
 
 def whatSize():
-    print("How big do you want your triforce?:")
-
     size = False
+
+    print("How big do you want your triforce?:")
     while size == False:
         
         number = int(input(" "))
@@ -71,29 +71,28 @@ def whatSize():
             print("")
         else:
             print("Please! write a positive integer number:")
+    
     print("")
     return number
 
 
+
 def printEnd():
-    print_file("end.txt")
+    printFile("end.txt")
     print("")
     print("Take care of Hyrule!")
     print("")
 
 
+
 def main():
-    
-    
-    print_file("title.txt")
     generate = False
+
+    printFile("title.txt")
     while generate == False:
         
         size = whatSize()
-
-
-        printTriForce(size, (size*2)-1)
-
+        printTriforce(size, (size*2)-1)
         correctOption = False
         while correctOption == False:
             print("Do you want to generate another Triforce?")
@@ -101,8 +100,7 @@ def main():
             print("2 - No")
             option = str(input(" "))
             print(" ")
-            
-            
+
             if option == "2" or option == "n" or option == "N" or option == "No":
                 generate = True
                 correctOption = True
@@ -115,6 +113,7 @@ def main():
 
     printEnd()
 
+
+
 if __name__ == "__main__":
-   
     main()
