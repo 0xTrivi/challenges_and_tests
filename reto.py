@@ -34,17 +34,17 @@ def dibujarTriangulosDebajo(number: int,rowMax: int):
 
 
 
-def imprimir_contenido_archivo(title):
+
+
+def print_file(file_name: str):
     try:
-        with open(title, 'r') as archivo:
-            contenido = archivo.read()
-            print(contenido)
+        with open(file_name, 'r', encoding='utf-8') as file:
+            content = file.read()
+            print(content)
     except FileNotFoundError:
-        print(f"El archivo {title} no existe.")
+        print(f"The file {file_name} does not exist.")
     except IOError:
-        print(f"No se puede abrir el archivo {title}.")
-
-
+        print(f"Unable to open the file {file_name}.")
 
 
 
@@ -74,10 +74,18 @@ def whatSize():
     print("")
     return number
 
+
+def printEnd():
+    print_file("end.txt")
+    print("")
+    print("Take care of Hyrule!")
+    print("")
+
+
 def main():
     
     
-
+    print_file("title.txt")
     generate = False
     while generate == False:
         
@@ -85,21 +93,28 @@ def main():
 
 
         printTriForce(size, (size*2)-1)
-        
-        print("Do you want to generate another Triforce?")
-        print("1 - Yes")
-        print("2 - No")
-        option = str(input(" "))
-        print(" ")
-        if option == "2" or option == "n" or option == "N" or option == "No":
-            generate = True
-            print("")
-        elif option == "1" or option == "y" or option == "Y" or option == "Yes":  
-            print("")
-        else:
-            print("Please! write a correct option.")
+
+        correctOption = False
+        while correctOption == False:
+            print("Do you want to generate another Triforce?")
+            print("1 - Yes")
+            print("2 - No")
+            option = str(input(" "))
+            print(" ")
+            
+            
+            if option == "2" or option == "n" or option == "N" or option == "No":
+                generate = True
+                correctOption = True
+                print("")
+            elif option == "1" or option == "y" or option == "Y" or option == "Yes":  
+                print("")
+                correctOption = True
+            else:
+                print("Please! write a correct option.")
+
+    printEnd()
 
 if __name__ == "__main__":
-    # Llamada a la función para imprimir el contenido del archivo "portada.txt"
-    imprimir_contenido_archivo("title.txt")
+   
     main()
