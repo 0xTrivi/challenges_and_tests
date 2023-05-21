@@ -23,7 +23,7 @@ Example: Triforce 2
 ## About the Solution 💻
 
 Once I figured out the logic behind the sequences, I separated the program into different functions to make it more flexible, and I followed the PEP 8 coding style.
-I added some freely available ASCII art illustrations to enhance the atmosphere.
+I added some freely available ASCII art illustrations to enhance the atmosphere and a little menu.
 
 <br>
 <br>
@@ -55,4 +55,4 @@ Ejemplo: Trifuerza 2
 ## Sobre la resolución 👨‍💻
 
 Una vez hallé la lógica de las sucesiones separé el programa en distintas funciones para darle más flexibilidad y seguí el estilo PEP 8 para el código. 
-Añadí algunas ilustraciones en ASCII de libre uso para darle más ambientación.
+Añadí algunas ilustraciones en ASCII de libre uso para darle más ambientación y un pequeño menú.
