@@ -2,7 +2,7 @@
 
 
 Welcome to my challenges and tests repository! Here, you will find a collection of small programming challenges and tests that I do while learning more about Python.
-If you want to read this README in Spanish, [click_here](#spanish)
+If you want to read this README in Spanish, [click here](#spanish)
 
  
 
@@ -42,14 +42,12 @@ If you have any questions or comments, feel free to contact me.
 
 Happy coding!
 
-
-
-
-
+<br>
+<br>
 
 # Repositorio de Retos y Pruebas <a name="spanish"></a>
 
-¡Bienvenidos y bienavenidas a mi repositorio de retos y pruebas! Aquí irás encontrando una colección de pequeños retos y pruebas de programación que voy haciendo mientras aprendo más sobre Python.
+¡Bienvenidos y bienvenidas a mi repositorio de retos y pruebas! Aquí irás encontrando una colección de pequeños retos y pruebas de programación que voy haciendo mientras aprendo más sobre Python.
 
 ## Acerca de
 
@@ -85,9 +83,3 @@ Espero que estos retos y pruebas de programación te sean también útiles. ¡Di
 Si tienes alguna pregunta o comentario, no dudes en contactarme.
 
 ¡Happy coding!
-
-
-[Ir a la Sección de Ejemplo](#seccion-ejemplo)
-
-
-
