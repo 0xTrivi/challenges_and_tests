@@ -1,4 +1,23 @@
+"""
+Solution author: https://github.com/0xTrivi
+Challenge number 20 of @Mouredev
+Source repository: https://github.com/mouredev/retos-programacion-2023
 
+Statement:
+
+The new "The Legend of Zelda: Tears of the Kingdom" is now available!
+Create a program that draws a Triforce from "Zelda" using asterisks.
+
+You should provide the number of rows for the triangles with a positive integer (n).
+Each triangle will calculate its largest row using the formula 2n-1.
+Example: Triforce 2
+
+     *
+    ***
+   *   *
+  *** ***
+
+"""
 
 def print_spaces(number: int):
     """Prints in a line of text the number of spaces set."""
@@ -18,7 +37,6 @@ def print_Power(size: int, lastRowSize: int):
     for i in range(size):
         print_spaces(lastRowSize-i)
         print_asterisks(i+1)
-        print_spaces(lastRowSize-i)
         print(" ")
 
 
@@ -29,7 +47,6 @@ def print_Wisdom_and_Courage(numberOfRows: int, lastRowSize: int):
         print_asterisks(i+1)
         print_spaces((lastRowSize-(2*i)-1))
         print_asterisks(i+1)
-        print_spaces((numberOfRows-i)-1)
         print(" ")
 
 
@@ -59,13 +76,17 @@ def what_size() -> int:
     size = False
     print("How big do you want your triforce?:")
     while size == False:      
-        number = int(input(" "))
-        print(" ")    
-        if number > 0 and type(number) == int:
-            size = True
-            print("")
-        else:
-            print("Please! write a positive integer number:")
+        try:
+            number = int(input(" "))
+            print(" ")    
+            if number > 0 and type(number) == int:
+                size = True
+                print("")
+            else:
+                print("Please! write a positive integer number:")
+        except ValueError:
+            print("Error: You must enter an integer.")
+        
     print("")
     return number
 
@@ -77,12 +98,17 @@ def print_end():
     print("Take care of Hyrule!")
     print("")
 
+def print_title():
+    """Print the title to the program."""
+    print_file("resources/title.txt")
+    print("")
+
 
 def main():
     """Allows the user to print one or more Triforce."""
     finish = False
 
-    print_file("resources/title.txt")
+    print_title()
     while finish == False:
         sizeTriforce = what_size()
         print_Triforce(sizeTriforce, (sizeTriforce*2)-1)
