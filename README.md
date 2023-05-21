@@ -1,6 +1,6 @@
 # Challenges and Tests Repository 👨‍💻
 
-Welcome to my challenges and tests repository! Here, you will find a collection of small programming challenges and tests that I do while learning more about Python.
+Welcome to my challenges and tests repository! Here, you will find a collection of small programming challenges and tests that I do while learning more about Python.<br>
 If you want to read this README in Spanish, [click here](#spanish)
 
 # About 🔍
@@ -10,7 +10,6 @@ In this repository, you can explore different programming challenges and exercis
 # Repository Structure 🌳
 
 ├── Challenges <br>
-│ ├── <br>
 │ ├── Challenge Title<br>
 │ └── ... <br>
 ├── Tests <br>
@@ -51,11 +50,11 @@ En este repositorio, podrás explorar diferentes desafíos y ejercicios de progr
 
 ## Estructura del repositorio 🌳
 
-├── Retos <br>
+├── Challenges <br>
 │ ├── <br>
 │ ├── Título del reto<br>
 │ └── ... <br>
-├── Pruebas <br>
+├── Tests <br>
 │ ├── Tema de la prueba <br>
 │ ├── ... <br>
 └── README.md <br>
