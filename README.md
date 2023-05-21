@@ -25,7 +25,10 @@ Repository Structure
 
 ## Repository Index
 
-[The Triforce](./The_Triforce)
+
+
+
+[The Triforce](https://github.com/0xTrivi/challenges_and_tests/tree/master/challenges/The_Triforce)
 
 ## Contribution
 Feel free to contribute to this repository. If you have any interesting challenge or test that you would like to share, you can submit a pull request. You can also report issues or suggest improvements through GitHub's issue tracking system.
@@ -68,7 +71,7 @@ En este repositorio, podrás explorar diferentes desafíos y ejercicios de progr
 
 ## Índice del repositorio
 
-[The Triforce](./The_Triforce)
+[The Triforce](https://github.com/0xTrivi/challenges_and_tests/tree/master/challenges/The_Triforce)
 
 ## Contribución
 
